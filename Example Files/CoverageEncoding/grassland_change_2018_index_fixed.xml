@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wcs21:CoverageDescriptions xmlns:wcs21="http://www.opengis.net/wcs/2.1/gml" xmlns:wcs20="http://www.opengis.net/wcs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rasdaman="http://www.rasdaman.org" xmlns:cis11="http://www.opengis.net/cis/1.1/gml" xsi:schemaLocation="http://www.opengis.net/wcs/2.1/gml https://schemas.opengis.net/wcs/2.1/gml/wcsAll.xsd">
+	<wcs21:CoverageDescription gml:id="asdf">
+		<wcs20:CoverageId>grassland_change_2018_index</wcs20:CoverageId>
+		<gml:coverageFunction>
+			<gml:GridFunction>
+				<gml:sequenceRule axisOrder="+2 +3 +1">Linear</gml:sequenceRule>
+				<gml:startPoint>0 -165000 -205000</gml:startPoint>
+			</gml:GridFunction>
+		</gml:coverageFunction>
+		<cis11:Envelope srsName="http://localhost:8080/rasdaman/def/crs-compound?1=https://crs.rasdaman.com/def/crs/OGC/0/Index1D?axis-label=&quot;time&quot;&amp;2=https://crs.rasdaman.com/def/crs/EPSG/0/3035" axisLabels="time Y X" srsDimension="3">
+			<cis11:AxisExtent axisLabel="time" uomLabel="GridSpacing" lowerBound="2018" upperBound="2018"/>
+			<cis11:AxisExtent axisLabel="Y" uomLabel="metre" lowerBound="900000" upperBound="5500000"/>
+			<cis11:AxisExtent axisLabel="X" uomLabel="metre" lowerBound="900000" upperBound="7400000"/>
+		</cis11:Envelope>
+		<cis11:DomainSet>
+			<cis11:GeneralGrid srsName="http://localhost:8080/rasdaman/def/crs-compound?1=https://crs.rasdaman.com/def/crs/OGC/0/Index1D?axis-label=&quot;time&quot;&amp;2=https://crs.rasdaman.com/def/crs/EPSG/0/3035" axisLabels="time Y X">
+				<cis11:RegularAxis axisLabel="Y" uomLabel="metre" lowerBound="900000" upperBound="5500000" resolution="-20"/>
+				<cis11:RegularAxis axisLabel="X" uomLabel="metre" lowerBound="900000" upperBound="7400000" resolution="20"/>
+				<cis11:IrregularAxis axisLabel="time" uomLabel="GridSpacing">
+					<cis11:C>2018</cis11:C>
+				</cis11:IrregularAxis>
+				<cis11:GridLimits srsName="http://www.opengis.net/def/crs/OGC/0/Index3D" axisLabels="i j k">
+					<cis11:IndexAxis axisLabel="i" lowerBound="0" upperBound="0"/>
+					<cis11:IndexAxis axisLabel="j" lowerBound="-165000" upperBound="64999"/>
+					<cis11:IndexAxis axisLabel="k" lowerBound="-205000" upperBound="119999"/>
+				</cis11:GridLimits>
+			</cis11:GeneralGrid>
+		</cis11:DomainSet>
+		<cis11:RangeType>
+			<swe:DataRecord>
+				<swe:field name="Palette">
+					<swe:Quantity definition="http://www.opengis.net/def/dataType/OGC/0/unsignedByte">
+						<swe:label>Palette</swe:label>
+						<swe:description/>
+						<swe:nilValues>
+							<swe:NilValues>
+								<swe:nilValue reason="">240</swe:nilValue>
+							</swe:NilValues>
+						</swe:nilValues>
+						<swe:uom code="10^0"/>
+						<swe:constraint/>
+					</swe:Quantity>
+				</swe:field>
+			</swe:DataRecord>
+		</cis11:RangeType>
+		<wcs20:ServiceParameters>
+			<wcs20:CoverageSubtype>GeneralGridCoverage</wcs20:CoverageSubtype>
+			<wcs20:nativeFormat>application/octet-stream</wcs20:nativeFormat>
+		</wcs20:ServiceParameters>
+	</wcs21:CoverageDescription>
+</wcs21:CoverageDescriptions>
