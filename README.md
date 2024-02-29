@@ -5,9 +5,9 @@ This space is used for issues and discussions on general FAIRiCUBE topics. In ad
 - For UC specific issues, the UC Specific Repos:
   - [UC1 Urban Climate](https://github.com/FAIRiCUBE/uc1-urban-climate)
   - [UC2 Agriculture Biodiversity Nexus](https://github.com/FAIRiCUBE/uc2-agriculture-biodiversity-nexus)
-  - [UC3a Drosophila Genetics](https://github.com/FAIRiCUBE/uc3-drosophola-genetics)
-  - [UC3b Phytosociological Methods](https://github.com/FAIRiCUBE/uc3-biodiversity-occurence)
+  - [UC3 Drosophila Genetics](https://github.com/FAIRiCUBE/uc3-drosophola-genetics)
   - [UC4 Urban Building Stock](https://github.com/FAIRiCUBE/uc4-building-stock)
+  - [UC5 Phytosociological Methods](https://github.com/FAIRiCUBE/uc3-biodiversity-occurence)
 
 Use the Issues tab to report bugs, errors or other topics that must be fixed, use the Discussions tab to start a more discussion on a relevant topic.
 
